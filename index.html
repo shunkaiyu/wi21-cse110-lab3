@@ -1,1 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="main.css" rel="stylesheet">
+	<title>Shunkai's Website</title>
+</head>
+<body>
+<nav class="CSE 110">
+    <ol>
+        <li class="CSE 110"><a href="#">Lab2</a></li>
+        <li class="CSE 110">Shunkai's Website</li>
+    </ol>
+</nav>
+<h1>Shunkai's Website</h1>
+<h2>CSE 110 Lab 2</h2>
+<h3>Website</h3>
+<section>
+    <h2>Introduction</h2>
+    <p>A <span class="ingredient">simple</span> website.</p>
+    <aside>
+    	<p>Very very <strong>simple</strong>.</p>
+    </aside>
+</section>
+<p>Here are <b>orogramming languages</b> I can use:</p>
+<ul>
+<li>C/C++</li>
+<li>Python: <i>pytorch</i> </li>
+<li>Java</li>
+</ul>
+<hr>
+<form action="#">
+  <fieldset>
+    <legend>Countries I have been to:</legend>
+    <input type="radio" id="radio">
+    <label for="radio">Japan</label>
+  </fieldset>
+</form>
+<hr>
+<label for="story">A story in Japan:</label>
+
+<textarea id="story" name="story"
+          rows="5" cols="33">
+I met an earthquake...
+</textarea>
+<hr>
+<form action="/action_page.php">
+  <label for="fname">Email address:</label><br>
+  <input type="text" id="fname" value="shyu@ucsd.edu"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+<hr>
+<form>
+  <input type="checkbox" id="country1" name="country1" value="Japan">
+  <label for="country1"> Japan</label><br>
+  <input type="checkbox" id="country2" name="country2" value="U.K.">
+  <label for="country2"> U.K.</label><br>
+</form>
+<hr>
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2021-01-15"
+       min="2021-01-01" max="2021-12-31">
+<label for="time">More accurate time:</label>
+
+<input type="datetime-local" id="time"
+       name="time" value="2021-01-15T19:30"
+       min="2021-01-08T00:00" max="2021-01-15T00:00">
+<label for="appt">Another time:</label>
+
+<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+<small>Some time</small>
+<hr>
+<p><pre>A rich context</pre>: The <em>UC Scholars Program</em> and the Genentech Scholars Program are sister programs that share many features. This application is used for both programs (there is not a separate application for each program). <br>A simple command <code>push()</code>.
+<hr>
+<label for="pet-select">Choose a language you like:</label>
+
+<select id="pet-select">
+    <option value="">--Please choose a language--</option>
+    <optgroup label="Still HTML">
+        <option>HTML</option>
+        <option>HTML</option>
+        <option>HTML</option>
+    </optgroup>
+    <optgroup label="Aways HTML">
+        <option>HTML</option>
+        <option>HTML</option>
+        <option>HTML</option>
+    </optgroup>
+</select>
+
+<hr>
+<label for="language">Choose a language you like:</label>
+<input list="language-favor" id="language" name="language" />
+
+<datalist id="language-favor">
+    <option value="HTML">
+    <option value="HTML">
+    <option value="HTML">
+</datalist>
+<hr>
+<label for="email">Enter your ucsd.com email:</label>
+
+<input type="email" id="email"
+       pattern=".+@ucsd.com" size="20" required>
+<div>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+</div>
+<hr>
+<div>
+	<p>Attach is an image: </p>
+	<img src="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png" alt="Pokemon" width="300" height="300">
+</div>
+<figure>
+    <img src="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png"
+         alt="Pokemon">
+    <figcaption>A big pokemon figure</figcaption>
+</figure>
+<hr>
+<picture>
+    <source srcset="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png"
+            media="(min-width: 800px)">
+    <img src="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png" alt="" />
+</picture>
+<hr>
+<p>Lab1:
+<iframe src="https://github.com/shunkaiyu/Lab1" height="300" width="400"> </iframe></p>
+<hr>
+<p>Here is the link to <a href="https://github.com/shunkaiyu/Lab1">Lab1</a>.</p>
+<hr>
+<label for="avatar">Choose your own picture:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+<hr>
+<video controls="controls" src="https://www.youtube.com/watch?v=9NTrwrfI-X4">
+</video>
+<hr>
+<p>Setting:</p>
+<div>
+  <input type="range" id="volume" name="volume"
+         min="0" max="10">
+  <label for="volume">Volume</label>
+</div>
+<hr>
+<label for="site-search">Search for an audio:</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search">
+<button>Search</button>
+<hr>
+
+<hr>
+    <audio
+        controls
+        src="Kalimba.mp3">
+            <code>audio</code> element.
+    </audio>
+<hr>
+<p>canvas</p>
+<canvas width="300" height="300">
+</canvas>
+<hr>
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="red">
+  <circle cx="40" cy="40" r="30" />
+</svg>
+<hr>
+<form>
+  <div>
+    <label for="name">Enter PID: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div>
+    <input type="submit" value="Good luck">
+  </div>
+</form>
+<hr>
+<table>
+  <caption>Course list</caption>
+  <colgroup>
+    <col style="background-color: #0f0">
+    <col span="2">
+  </colgroup>
+  <tr>
+    <th>Courses</th>
+    <th>CSE 110</th>
+    <th>CSE 101</th>
+  </tr>
+  <tr>
+    <td>Credit</td>
+    <td>4</td>
+    <td>4</td>
+  </tr>
+</table>
+<hr>
+<details open>
+  <summary>Detail</summary>
+  <p>Content of summary</p>
+</details>
+<hr>
+<button onclick="show()">Show an image</button>
+<template>
+  <h2>Pokemon</h2>
+  <img src="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png" width="200" height="200">
+</template>
+
+<script>
+function show() {
+  var temp = document.getElementsByTagName("template")[0];
+  var c = temp.content.cloneNode(true);
+  document.body.appendChild(c);
+}
+</script>
+<footer>
+   <p>© 2021 Shunkai</p>
+</footer>
+</body>
+</html>
 
