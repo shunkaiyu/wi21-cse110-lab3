@@ -10,7 +10,18 @@ body {
   }
 }
 
+h3 {
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #para1 {
+  text-align: center;
+  color: red;
+}
+
+p {
   text-align: center;
   color: red;
 }
@@ -18,6 +29,10 @@ body {
 .center {
   text-align: center;
   color: red;
+}
+
+span {
+  display: block;
 }
 
 input[type=text] {
@@ -112,8 +127,3 @@ body {
   margin: 2rem;
   font: 12px system-ui;
 }
-
-span {
-  display: block;
-}
-        
