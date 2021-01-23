@@ -35,6 +35,7 @@ p {
 
 h1, h2 {
   text-align: center;
+  text-decoration: underline;
   color: black;
 }
 
@@ -82,6 +83,58 @@ box {
   margin-bottom: 100px;
   margin-right: 100px;
   margin-left: 100px;
+}
+
+/*
+Flex box and code structured from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+.flex-container {
+
+  display: flex;
+
+  flex-flow: row wrap;
+  
+
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*
+Grid and code structured from https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: #EDE7F6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+body {
+  margin: 2rem;
+  font: 12px system-ui;
+}
+
+span {
+  display: block;
 }
         
  </style>
