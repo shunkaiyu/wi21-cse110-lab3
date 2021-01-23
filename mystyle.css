@@ -10,18 +10,7 @@ body {
   }
 }
 
-h3 {
-  color: black;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 #para1 {
-  text-align: center;
-  color: red;
-}
-
-p {
   text-align: center;
   color: red;
 }
