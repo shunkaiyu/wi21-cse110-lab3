@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="main.css" rel="stylesheet">
-	<title>Shunkai's Website</title>
+    <meta charset="UTF-8">
+    <title>Shunkai's Page</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+       <style>
+	
+	h1, h2 {
+  		text-align: center;
+  		text-decoration: underline;
+  		color: black;
+	}
+  
+        * {
+            font-family: 'Roboto', sans-serif;
+            color: rgb(155, 55, 77);
+            background-color: hsla(120,100%,75%,0.3);
+        }
+    </style>
 </head>
 <body>
 <nav class="CSE 110">
@@ -12,7 +29,7 @@
         <li class="CSE 110">Shunkai's Website</li>
     </ol>
 </nav>
-<h1>Shunkai's Website</h1>
+<h1 id="para1">Shunkai's Website</h1>
 <h2>CSE 110 Lab 2</h2>
 <h3>Website</h3>
 <section>
@@ -207,7 +224,7 @@ I met an earthquake...
 <template>
   <h2>Pokemon</h2>
   <img src="https://raw.githubusercontent.com/shunkaiyu/Lab1/vscode-branch/pokemon.png" width="200" height="200">
-</template>
+</template>	
 
 <script>
 function show() {
@@ -216,9 +233,35 @@ function show() {
   document.body.appendChild(c);
 }
 </script>
+	
+<p style="color:black;">An CSE course flowchart is shown below:</p>		
+
+<ul class="flex-container">
+  <li class="flex-item">CSE 11</li>
+  <li class="flex-item">CSE 12</li>
+  <li class="flex-item">CSE 21</li>
+  <li class="flex-item">CSE 100</li>
+  <li class="flex-item">CSE 110</li>
+  <li class="flex-item">CSE 120</li>
+</ul>	
+	
+<p style="color:black;">An alphabetical word calender is shown below:</p>	
+
+<div class="grid">
+<div>Apple</div>
+<div>Banana.</div>
+<div>Candy</div>
+<div>Deer</div>
+<div>Energy</div>
+<div>Freak</div>
+<div>Good</div>
+<div>HIV</div>
+<div>Joker</div>
+<div>King</div>
+</div>
+
 <footer>
    <p>© 2021 Shunkai</p>
 </footer>
 </body>
 </html>
-

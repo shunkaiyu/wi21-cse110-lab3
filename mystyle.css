@@ -1,0 +1,130 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    text-align: center;
+    background-color: white;
+  }
+}
+
+h3 {
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+input[type=text] {
+  width: 100px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 250px;
+}
+
+p:hover, h1:hover, a:hover {
+  background-color: yellow;
+}
+
+p:active, h1:active, a:active {
+  background-color: pink;
+}
+
+div span {
+  background-color: rgb(255, 0, 0);
+}
+
+div > span {
+  background-color: white;
+}
+
+div ~ span {
+  background-color: rgba(255,0,0,0.3);
+}
+
+div + span {
+  background-color: blue;
+}
+
+box {
+  max-width: 100px;
+  padding-top: 50px;
+  padding-right: 500px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  border: 10px solid gray;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/*
+Flex box and code structured from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+.flex-container {
+
+  display: flex;
+
+  flex-flow: row wrap;
+  
+
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*
+Grid and code structured from https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: #EDE7F6;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+body {
+  margin: 2rem;
+  font: 12px system-ui;
+}
+
+span {
+  display: block;
+}
+        
