@@ -28,17 +28,6 @@ p {
   color: red;
 }
 
-* {
-  text-align: center;
-  color: blue;
-}
-
-h1, h2 {
-  text-align: center;
-  text-decoration: underline;
-  color: black;
-}
-
 input[type=text] {
   width: 100px;
   transition: ease-in-out, width .35s ease-in-out;
